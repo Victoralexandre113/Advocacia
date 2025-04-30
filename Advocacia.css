@@ -8,6 +8,42 @@
 header {
     padding: 2rem 1rem;
     background-color: #a7a09b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+
+}
+
+.nav-div {
+    display: flex;
+    justify-content: end;
+}
+
+header img {
+    display: flex;
+    align-items: center;
+}
+
+.list-01 ul {
+
+    display: flex;
+    gap: 1rem;
+}
+
+.list-01 ul li {
+    list-style: none;
+}
+
+.list-01 ul li a {
+    text-decoration: none;
+    color: white;
 }
 
 .cointaner {
@@ -17,31 +53,84 @@ header {
     flex-wrap: wrap;
     align-content: center;
 
+
 }
 
-.cointaner div{
-    height: 20rem;
-    width: 20rem;
+.cointaner div {
+    height: 28rem;
+    width: 28rem;
     margin: 12px;
     min-width: 299px;
+
+
 }
 
-.sessao1{
+.sessao1 {
     background-color: #8b847d;
+    justify-content: space-between;
+    background-image: url(imagens/banner-advogado-goiania.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.sessao1 div {
+    gap: 0.7rem;
     background-position: start;
-    background-image: url();
+}
+
+.sessao1 h1 {
+    font-size: 2.2rem;
+    color: white;
+
+}
+
+.sessao1 p {
+    font-size: 1.1rem;
+    color: white;
+
+}
+
+.sessao1 button {
+    padding: 0.7rem;
+    background-color: grey;
+    color: white;
+    border-radius: 0.7rem;
+}
+
+
+.sessao2 {
+    background-color: #8b847d;
     
 }
 
-
-.sessao1 h1{
-font-size: 2.2rem;
-color: black
+.paragrafo01 {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
 }
 
-.sessao1 p{
-    font-size: 1.1rem;
+.sessao3 {
+    background-color: #8b847d;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.sessao3 p{
+    font-size: 2.2rem;
     color: white;
+    font-weight: 700;
+}
+
+.sessao4{
+    background-color: aqua;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
