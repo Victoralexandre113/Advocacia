@@ -127,10 +127,38 @@ header img {
 }
 
 .sessao4{
-    background-color: aqua;
-    background-image: url();
+    
+    background-image: url(imagens/10981320.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    flex-wrap: wrap;
+    background-attachment: fixed;
 
 }
+
+.sessao4 button{
+    padding: 0.7rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.7rem;
+}
+
+.sessao4 button:hover{
+    background-color: gray;
+    color: ;
+    transition: 0.8s;
+}
+
+.sessao4 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: aqua;
+    padding: 45px;
+}
+
+
 
