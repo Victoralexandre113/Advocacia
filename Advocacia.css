@@ -101,7 +101,7 @@ header img {
 
 .sessao2 {
     background-color: #8b847d;
-    
+
 }
 
 .paragrafo01 {
@@ -120,14 +120,14 @@ header img {
 
 }
 
-.sessao3 p{
+.sessao3 p {
     font-size: 2.2rem;
     color: white;
     font-weight: 700;
 }
 
-.sessao4{
-    
+.sessao4 {
+
     background-image: url(imagens/10981320.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,29 +136,159 @@ header img {
 
 }
 
-.sessao4 button{
+.sessao4 button {
     padding: 0.7rem;
     background-color: black;
     color: white;
     border-radius: 0.7rem;
 }
 
-.sessao4 button:hover{
+.sessao4 button:hover {
     background-color: gray;
-    color: ;
+    color: white;
     transition: 0.8s;
 }
 
-.sessao4 div{
+.sessao4 div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer{
-    background-color: aqua;
-    padding: 45px;
+/* footer */
+
+footer {
+    background-color: rgb(87, 85, 85);
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.line {
+    margin: 2rem;
+    width: 10rem;
+}
+
+.ul-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.ul-footer a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.ul-footer li {
+    list-style: none;
 }
 
 
+.img-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.sociais {
+    padding: 0.9rem;
+    display: flex;
+    gap: 10px;
+}
+
+.sociais i {
+    color: white;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .logo-header {
+        width: 3rem;
+    }
+
+    .div-01 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-01 p {
+        font-size: 1.6rem;
+        margin: 25px;
+    }
+
+    .sessao2 {
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .sessao2-div{
+        display: flex;
+        justify-content: center;
+        width: 10rem;
+    }
+
+    .sessao2 img{
+        width: 350px;
+        height: 350px;
+        border-radius: 15px;
+    }
+
+    .sessao2 p{
+        font-size: 2.0rem;
+        color: white;
+        font-weight: 700;
+    }
+
+    .div-paragrafo01{
+        width: 200px;
+    }
+
+    .sessao3 {
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .sessao3-div {
+        display: flex;
+        justify-content: center;
+        width: 10rem;
+
+    }
+
+    .sessao3 img {
+        width: 350px;
+        height: 350px;
+        border-radius: 15px;
+    }
+
+    .div-sessao04 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+
+}
