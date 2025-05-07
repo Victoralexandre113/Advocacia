@@ -7,7 +7,7 @@
 
 header {
     padding: 2rem 1rem;
-    background-color: #a7a09b;
+    background-color: rgb(61, 60, 60);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +18,11 @@ header {
     left: 0;
 
     z-index: 999;
+
+}
+
+.hamburger {
+    display: none;
 
 }
 
@@ -32,7 +37,6 @@ header img {
 }
 
 .list-01 ul {
-
     display: flex;
     gap: 1rem;
 }
@@ -43,6 +47,16 @@ header img {
 
 .list-01 ul li a {
     text-decoration: none;
+    color: rgb(61, 60, 60);
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+}
+
+.list-01 ul li a:hover {
+    background-color: rgb(61, 60, 60);
+    transition: 0.9s;
     color: white;
 }
 
@@ -100,11 +114,15 @@ header img {
 
 
 .sessao2 {
-    background-color: #8b847d;
+    background-color: rgb(87, 85, 85);
 
 }
 
-.paragrafo01 {
+.sessao2 img {
+    border-radius: 1rem;
+}
+
+.div-paragrafo01 {
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
@@ -112,7 +130,7 @@ header img {
 }
 
 .sessao3 {
-    background-color: #8b847d;
+    background-color: rgb(87, 85, 85);
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
@@ -126,9 +144,13 @@ header img {
     font-weight: 700;
 }
 
+.sessao3 img {
+    border-radius: 1rem;
+}
+
 .sessao4 {
 
-    background-image: url(imagens/10981320.jpg);
+    background-image: url(imagens/pngtree-wooden-benches-in-court-room-picture-image_3636964.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     flex-wrap: wrap;
@@ -185,12 +207,26 @@ footer {
     list-style: none;
 }
 
+.ul-footer li a{
+    font-weight: 600;
+}
+
+.ul-footer li a:hover{
+color: black;
+background: transparent;
+transition: 0.8s;
+}
+
 
 .img-line {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.line{
+    width: 7.8rem;
 }
 
 .sociais {
@@ -204,6 +240,15 @@ footer {
     font-size: 2rem;
 }
 
+.sociais i:hover{
+    background: transparent;
+    color: rgb(0, 0, 0);
+    transition: 0.8s;
+}
+
+
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -214,10 +259,36 @@ footer {
 
 /* Responsividade */
 
+@media (max-width: 834px) {
+
+    .sessao3-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 @media (max-width: 768px) {
 
     .logo-header {
         width: 3rem;
+        
+    }
+
+
+    .hamburger {
+        display: flex;
+        padding: 0.3rem;
+        background: transparent;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .list-01 {
+        display: none;
+        /*o display none serve para esconder o conteúdo e fazer com que ele não fique visível*/
     }
 
     .div-01 {
@@ -235,28 +306,28 @@ footer {
         gap: 1rem;
         justify-content: center;
         align-items: center;
-    
+
     }
 
-    .sessao2-div{
+    .sessao2-div {
         display: flex;
         justify-content: center;
         width: 10rem;
     }
 
-    .sessao2 img{
+    .sessao2 img {
         width: 350px;
         height: 350px;
         border-radius: 15px;
     }
 
-    .sessao2 p{
+    .sessao2 p {
         font-size: 2.0rem;
         color: white;
         font-weight: 700;
     }
 
-    .div-paragrafo01{
+    .div-paragrafo01 {
         width: 200px;
     }
 
@@ -270,7 +341,7 @@ footer {
     .sessao3-div {
         display: flex;
         justify-content: center;
-        width: 10rem;
+        width: 8rem;
 
     }
 
@@ -278,6 +349,8 @@ footer {
         width: 350px;
         height: 350px;
         border-radius: 15px;
+
+
     }
 
     .div-sessao04 {
